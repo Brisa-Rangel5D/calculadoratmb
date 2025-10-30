@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+    <h4 class="text-info mb-3">Resultados del Cálculo</h4>
+    <p class="fs-5 text-info"><strong>TMB:</strong> {{ tmb | round(2) }} kcal/día</p>
+    <p class="fs-5 text-info"><strong>GET:</strong> {{ get | round(2) }} kcal/día</p>
+
+    <a href="/" class="btn btn-info mt-3 text-white">
+        Volver
+    </a>
+</div>
+{% endblock %}
